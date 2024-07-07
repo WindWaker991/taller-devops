@@ -7,7 +7,7 @@ import {
 export class AppController {
   @Get()
   getMany() {
-    return 'Esto funciona';
+    return 'Commit de prueba';
   }
 
 }
