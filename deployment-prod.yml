@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-taller-prod
-          image: windwaker991/taller-devops-prod:latest 
+          image: rarifbkn/taller-devops-prod:latest 
           imagePullPolicy: Always
           ports:
             - containerPort: 3000 
