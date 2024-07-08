@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: devops-lab-dev-service
-  namespace: jenkins
+  name: devops-taller-dev-service
+  namespace: jenkins-taller
 spec:
   selector:
-    app: devops-lab-dev
+    app: devops-taller-dev
   ports:
     - protocol: TCP
       port: 3000      
       targetPort: 3000 
-      nodePort: 25001  
+      nodePort: 31001  
   type: NodePort
