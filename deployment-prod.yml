@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: devops-taller-prod-deploy
+spec:
+  selector:
+    matchLabels:
+      app: devops-taller-prod
+  replicas: 2 
+  template:
+    metadata:
+      labels:
+        app: devops-taller-prod
+    spec:
+      containers:
+        - name: devops-taller-prod
+          image: windwaker991/taller-devops-prod:latest 
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000 
