@@ -4,7 +4,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { USER_REPOSITORY, UserRepository } from './user.repository';
 import { hashSync } from 'bcrypt';
-
+console.log('USER_REPOSITORY');
 @Injectable()
 export class UserService {
   constructor(
