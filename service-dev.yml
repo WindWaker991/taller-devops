@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: devops-taller-dev-service
-  namespace: jenkins
+  namespace: jenkins-taller
 spec:
   selector:
     app: devops-taller-dev
