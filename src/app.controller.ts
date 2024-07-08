@@ -7,7 +7,7 @@ import {
 export class AppController {
   @Get()
   getMany() {
-    return 'Commit 1';
+    return 'Commit 2';
   }
 
 }
